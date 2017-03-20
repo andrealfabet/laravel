@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('users', ['uses' => 'UsersController@index']);
+/*Route::get('/users', function () {
+	$users = [
+		'0' => [
+			'first' => 'andre',
+			'last' => 'alfa',
+			'location' => 'Indonesia'
+		]
+	];
+    return $users;
+});
+*/
